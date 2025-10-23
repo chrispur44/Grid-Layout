@@ -1,0 +1,38 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px 200px 100px;
+    gap: 10px;
+    height: 100vh;
+    padding: 10px;
+}
+
+.box {
+    border: 2px solid black;
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.header {
+    grid-column: 1/4;
+    background-color: lightcoral;
+}
+
+.sidebar {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: lightgreen;
+}
+
+.main {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background-color: lightyellow;
+}
+
+.footer {
+    grid-column: 1/4;
+    background-color: lightgray;
+}
